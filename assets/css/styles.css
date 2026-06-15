@@ -1663,11 +1663,17 @@ textarea.form-control {
 .manuscript-step {
   position: relative;
   display: flex;
-  min-height: 270px;
+  min-height: 360px;
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
-  padding: 28px 24px;
+  padding: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.manuscript-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 40px rgba(0, 106, 177, 0.12);
 }
 
 .manuscript-icon {
@@ -1727,21 +1733,27 @@ textarea.form-control {
 .manuscript-lottie {
   position: relative;
   z-index: 1;
-  width: 72px;
-  height: 72px;
+  width: 100%;
+  height: 160px;
   flex-shrink: 0;
-  margin-bottom: 20px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(0, 106, 177, 0.08), rgba(0, 180, 216, 0.08));
+  margin-bottom: 0;
+  border-radius: 0;
+  background: linear-gradient(135deg, rgba(0, 106, 177, 0.04), rgba(0, 180, 216, 0.02));
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-bottom: 1px solid rgba(0, 106, 177, 0.06);
 }
 
 .manuscript-lottie dotlottie-player {
-  width: 56px;
-  height: 56px;
+  width: 110px;
+  height: 110px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.manuscript-step:hover .manuscript-lottie dotlottie-player {
+  transform: scale(1.08);
 }
 
 .captcha-wrapper {
@@ -1753,10 +1765,19 @@ textarea.form-control {
   font-weight: 700;
 }
 
-.manuscript-step h3 {
+.manuscript-step-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 24px 20px;
+}
+
+.manuscript-step-body h3 {
   position: relative;
   z-index: 1;
-  min-height: 3.05em;
+  min-height: 2.8em;
   margin-bottom: 8px;
   color: var(--brand-strong);
   font-size: 1.08rem;
@@ -1764,7 +1785,7 @@ textarea.form-control {
   line-height: 1.42;
 }
 
-.manuscript-step p {
+.manuscript-step-body p {
   position: relative;
   z-index: 1;
   margin: 0;
@@ -1881,9 +1902,12 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
-  .enterprise-card,
-  .manuscript-step {
+  .enterprise-card {
     min-height: 220px;
+  }
+
+  .manuscript-step {
+    min-height: auto;
   }
 
   .manuscript-actions .btn {
