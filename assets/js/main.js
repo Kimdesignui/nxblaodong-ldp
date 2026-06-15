@@ -47,6 +47,7 @@ function initConsultForm() {
   const captchaQuestion = document.getElementById("captchaQuestion");
   const captchaInput = document.getElementById("captchaInput");
   const consentCheckbox = document.getElementById("privacyConsent");
+  const captchaCol = document.getElementById("captchaCol");
 
   let captchaAnswer = 0;
 
@@ -62,7 +63,26 @@ function initConsultForm() {
     }
   }
 
+  function syncCaptchaVisibility() {
+    if (!consentCheckbox || !captchaCol || !captchaInput) return;
+    if (consentCheckbox.checked) {
+      captchaCol.classList.add("is-visible");
+      captchaInput.removeAttribute("disabled");
+      captchaInput.setAttribute("required", "");
+    } else {
+      captchaCol.classList.remove("is-visible");
+      captchaInput.setAttribute("disabled", "");
+      captchaInput.removeAttribute("required");
+      captchaInput.value = "";
+    }
+  }
+
+  if (consentCheckbox) {
+    consentCheckbox.addEventListener("change", syncCaptchaVisibility);
+  }
+
   generateCaptcha();
+  syncCaptchaVisibility();
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -81,7 +101,8 @@ function initConsultForm() {
       return;
     }
 
-    if (captchaInput && parseInt(captchaInput.value, 10) !== captchaAnswer) {
+    const isCaptchaRequired = captchaInput && !captchaInput.disabled;
+    if (isCaptchaRequired && parseInt(captchaInput.value, 10) !== captchaAnswer) {
       status.textContent = "Câu trả lời bảo mật không đúng. Vui lòng thử lại.";
       status.classList.add("is-error");
       generateCaptcha();
@@ -123,6 +144,19 @@ function initConsultForm() {
       status.textContent = "Thông tin đã được gửi thành công. Chúng tôi sẽ phản hồi qua email của bạn.";
       form.reset();
       form.classList.remove("was-validated");
+      if (typeof syncCaptchaVisibility === "function") {
+        syncCaptchaVisibility();
+      } else {
+        // Fallback if checked
+        const captchaCol = document.getElementById("captchaCol");
+        const captchaInput = document.getElementById("captchaInput");
+        if (captchaCol) captchaCol.classList.remove("is-visible");
+        if (captchaInput) {
+          captchaInput.setAttribute("disabled", "");
+          captchaInput.removeAttribute("required");
+          captchaInput.value = "";
+        }
+      }
       generateCaptcha();
     } catch (error) {
       status.textContent = "Chưa thể gửi thông tin. Vui lòng thử lại sau hoặc liên hệ info@nxblaodong.com.vn.";

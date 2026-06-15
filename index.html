@@ -250,14 +250,14 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <div class="captcha-wrapper glass-surface p-3 rounded-3 mb-2" style="border: 1px solid rgba(0, 106, 177, 0.1);">
+                  <div class="col-12 captcha-col" id="captchaCol">
+                    <div class="captcha-wrapper glass-surface p-3 rounded-3" style="border: 1px solid rgba(0, 106, 177, 0.1);">
                       <label class="form-label d-block fw-semibold mb-2" for="captchaInput">
                         Câu hỏi bảo mật: <span id="captchaQuestion" class="badge bg-primary text-white fs-6 py-2 px-3">5 + 2 = ?</span> <span class="required-mark" aria-hidden="true">*</span>
                       </label>
                       <div class="input-group">
                         <span class="input-group-text bg-transparent border-end-0" style="color: #6b7280;"><i class="bi bi-shield-lock"></i></span>
-                        <input class="form-control border-start-0" id="captchaInput" type="number" placeholder="Nhập kết quả phép tính để chống spam" required>
+                        <input class="form-control border-start-0" id="captchaInput" type="number" placeholder="Nhập kết quả phép tính để chống spam" required disabled>
                       </div>
                     </div>
                   </div>
