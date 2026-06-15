@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="icon" href="https://images.nxblaodong.com.vn/avatar/image-20221214111957476.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
 </head>
 <body>
   <header class="topbar">
@@ -23,12 +25,11 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Giới thiệu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#overview">Tổng quan</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#hero">Trang đầu</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#process">Quy trình</a></li>
-          <li class="nav-item"><a class="nav-link" href="#partners">Đối tượng</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#enterprise">Dành cho doanh nghiệp</a></li>
+          <li class="nav-item"><a class="nav-link" href="#manuscript">Bắt đầu từ bản thảo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Đăng ký tư vấn</a></li>
         </ul>
         <a class="btn btn-primary nav-cta" href="#contact">Đăng ký tư vấn</a>
       </div>
@@ -41,17 +42,17 @@
         <div class="row align-items-center g-4 g-xl-5 hero-grid">
           <div class="col-lg-7">
             <div class="hero-copy">
-              <p class="eyebrow">Dịch vụ liên kết xuất bản - NXB Lao Động</p>
-              <h1>Hiện thực hóa cuốn sách của bạn</h1>
-              <p class="hero-lead">Nhà xuất bản Lao Động đồng hành cùng tác giả, doanh nghiệp và tổ chức từ thủ tục cấp phép, hoàn thiện bản thảo, biên tập, dàn trang, thiết kế bìa, in ấn đến kết nối phát hành và sản xuất ấn phẩm điện tử.</p>
+              <p class="eyebrow">Nhà xuất bản Lao Động</p>
+              <h1>Dịch vụ liên kết xuất bản</h1>
+              <p class="hero-lead">Nhà xuất bản Lao Động đồng hành cùng tác giả, doanh nghiệp và tổ chức từ thủ tục cấp phép, hoàn thiện bản thảo, biên tập, dàn trang, thiết kế bìa, in ấn đến kết nối phát hành.</p>
               <div class="hero-service-pills" aria-label="Dịch vụ chính">
                 <span><i class="bi bi-patch-check"></i> Cấp giấy phép</span>
                 <span><i class="bi bi-journal-richtext"></i> Hoàn thiện bản thảo</span>
                 <span><i class="bi bi-phone"></i> Ấn phẩm điện tử</span>
               </div>
               <div class="hero-actions">
-                <a class="btn btn-primary btn-lg btn-cta-strong" href="#contact"><i class="bi bi-send"></i> Nhận tư vấn đề tài</a>
-                <a class="btn btn-light btn-lg" href="#process"><i class="bi bi-diagram-3"></i> Xem quy trình</a>
+                <a class="btn btn-primary btn-lg btn-cta-strong" href="#contact"><i class="bi bi-send"></i> Đăng ký tư vấn</a>
+                <a class="btn btn-light btn-lg" href="#services"><i class="bi bi-arrow-down"></i> Khám phá dịch vụ</a>
               </div>
             </div>
           </div>
@@ -71,285 +72,123 @@
       </div>
     </section>
 
-    <section class="counter-section reveal-section" aria-label="Số liệu Nhà xuất bản Lao Động">
-      <div class="container-xl">
-        <div class="counter-shell glass-panel">
-          <article class="counter-card">
-            <span class="counter-number" data-counter data-target="80" data-suffix="+">0</span>
-            <p>Năm hoạt động</p>
-          </article>
-          <article class="counter-card">
-            <span class="counter-number" data-counter data-target="10" data-suffix="K+">0</span>
-            <p>Đầu sách đã xuất bản</p>
-          </article>
-          <article class="counter-card">
-            <span class="counter-number" data-counter data-target="360" data-suffix="°">0</span>
-            <p>Cấp phép - sản xuất - phát hành</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="poster-cta-section reveal-section">
-      <div class="container-xl">
-        <div class="poster-cta glass-panel">
-          <div class="poster-media">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85" alt="Nhóm làm việc phát triển dự án sách">
-            <div class="poster-badge glass-surface">
-              <span class="animated-icon"><i class="bi bi-rocket-takeoff"></i></span>
-              <strong>Xuất bản chính danh</strong>
-            </div>
-          </div>
-          <div class="poster-copy">
-            <p class="section-kicker">Bắt đầu từ bản thảo</p>
-            <h2>Bạn đang ấp ủ một cuốn sách?</h2>
-            <p>Gửi thông tin để được tư vấn thủ tục xuất bản, hạn chế rủi ro và lựa chọn hình thức sản xuất phù hợp: sách giấy, ebook, audio book hoặc multimedia.</p>
-            <div class="poster-checks">
-              <span><i class="bi bi-check2-circle"></i> Tư vấn thủ tục cấp phép</span>
-              <span><i class="bi bi-check2-circle"></i> Hoàn thiện nội dung và thiết kế</span>
-              <span><i class="bi bi-check2-circle"></i> In ấn, số hóa và kết nối phát hành</span>
-            </div>
-            <div>
-              <a class="btn btn-primary btn-lg btn-cta-strong" href="#contact">Đăng ký tư vấn miễn phí</a>
-              <a class="btn btn-light btn-lg" href="mailto:info@nxblaodong.com.vn">Gửi email</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="overview">
-      <div class="container-xl">
-        <div class="row g-4 align-items-stretch">
-          <div class="col-lg-5">
-            <article class="intro-card glass-solid h-100">
-              <p class="section-kicker">Giới thiệu chung</p>
-              <h2>Một trong những nhà xuất bản lâu đời nhất Việt Nam</h2>
-              <p>Nhà xuất bản Lao Động được thành lập ngày 1/11/1945, với sứ mệnh truyền bá tri thức và nâng cao kỹ năng nghề nghiệp cho công nhân, người lao động. Trải qua hơn 80 năm hoạt động, NXB Lao Động đã xuất bản hàng chục nghìn đầu sách phục vụ công nhân, người lao động và đông đảo độc giả.</p>
-            </article>
-          </div>
-          <div class="col-lg-7">
-            <div class="row g-3 h-100">
-              <div class="col-md-6">
-                <article class="need-card glass-surface h-100">
-                  <span class="card-icon animated-icon"><i class="bi bi-lightbulb"></i></span>
-                  <h3>Lịch sử</h3>
-                  <p>Ra đời ngay sau ngày nước Việt Nam Dân chủ Cộng hòa thành lập, gắn với nhiệm vụ lan tỏa tri thức trong xã hội.</p>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="need-card glass-surface h-100">
-                  <span class="card-icon animated-icon"><i class="bi bi-file-earmark-text"></i></span>
-                  <h3>Nhiệm vụ</h3>
-                  <p>Tập trung vào các dòng sách cung cấp tri thức cho công nhân, người lao động, tổ chức Công đoàn và đông đảo độc giả.</p>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="need-card glass-surface h-100">
-                  <span class="card-icon animated-icon"><i class="bi bi-building-check"></i></span>
-                  <h3>Tầm nhìn</h3>
-                  <p>Trở thành nhà xuất bản hàng đầu trong cung cấp giá trị tinh thần và tri thức cho công nhân, người lao động.</p>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="need-card glass-surface h-100">
-                  <span class="card-icon animated-icon"><i class="bi bi-megaphone"></i></span>
-                  <h3>Định hướng</h3>
-                  <p>Giúp người lao động thích nghi, phát triển trong thế giới biến động thông qua tri thức và kỹ năng.</p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section-pad section-tint" id="services">
       <div class="container-xl">
         <div class="section-heading text-center">
           <p class="section-kicker">Dịch vụ liên kết xuất bản</p>
-          <h2>Ba nhóm dịch vụ trọng tâm từ tài liệu giới thiệu</h2>
-          <p>Từ cấp phép xuất bản, hoàn thiện cuốn sách giấy đến sản xuất ấn phẩm điện tử đa định dạng.</p>
+          <h2>Lựa chọn hướng triển khai phù hợp</h2>
+          <p>Ba nhóm dịch vụ dành cho doanh nghiệp, tác giả và các đơn vị phát triển nội dung xuất bản.</p>
         </div>
         <div class="row g-3 g-lg-4 justify-content-center">
           <div class="col-md-6 col-xl-4">
-            <article class="service-card glass-solid h-100">
+            <a class="service-card service-card-link glass-solid h-100" href="#enterprise">
               <span class="card-icon animated-icon"><i class="bi bi-patch-check"></i></span>
-              <h3>Cấp giấy phép xuất bản</h3>
-              <p>Quy trình, thủ tục cấp giấy phép rõ ràng, minh bạch; tiến độ thẩm định nhanh chóng, đơn giản và lĩnh vực cấp phép đa dạng.</p>
-            </article>
+              <h3>Liên kết xuất bản</h3>
+              <p>Giải pháp dành cho doanh nghiệp và đơn vị phát hành cần quy trình thủ tục rõ ràng, minh bạch.</p>
+              <span class="service-card-action">Xem nội dung <i class="bi bi-arrow-down-right"></i></span>
+            </a>
           </div>
           <div class="col-md-6 col-xl-4">
-            <article class="service-card glass-solid h-100">
+            <a class="service-card service-card-link glass-solid h-100" href="#manuscript">
               <span class="card-icon animated-icon"><i class="bi bi-journal-richtext"></i></span>
-              <h3>Xuất bản cuốn sách của riêng bạn</h3>
-              <p>Tư vấn thủ tục xuất bản, đồng hành hoàn thiện bản thảo, biên tập, dàn trang, thiết kế bìa, vẽ minh họa, in ấn chuyên nghiệp và kết nối phát hành.</p>
-            </article>
+              <h3>Tự xuất bản cuốn sách của bạn</h3>
+              <p>Đồng hành từ bản thảo ban đầu đến biên tập, thiết kế, in ấn, số hóa và kết nối phát hành.</p>
+              <span class="service-card-action">Xem lộ trình <i class="bi bi-arrow-down-right"></i></span>
+            </a>
           </div>
           <div class="col-md-6 col-xl-4">
-            <article class="service-card glass-solid h-100">
+            <a class="service-card service-card-link glass-solid h-100" href="#contact">
               <span class="card-icon animated-icon"><i class="bi bi-phone"></i></span>
               <h3>Sản xuất ấn phẩm điện tử</h3>
-              <p>Sản xuất ebook, audio book, multimedia; phát hành trên nền tảng đọc sách tiên tiến, thân thiện với người đọc và kênh sách điện tử chính thống.</p>
+              <p>Sản xuất ebook, audio book và multimedia trên các nền tảng đọc sách điện tử chính thống.</p>
+              <span class="service-card-action">Nhận tư vấn <i class="bi bi-arrow-down-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad enterprise-section" id="enterprise">
+      <div class="container-xl">
+        <div class="enterprise-shell glass-panel">
+          <div class="enterprise-intro">
+            <p class="section-kicker">Liên kết xuất bản</p>
+            <h2>Dành cho doanh nghiệp, đơn vị phát hành</h2>
+            <p>Một quy trình phối hợp rõ ràng giúp đơn vị chủ động kế hoạch nội dung, hồ sơ và tiến độ đưa xuất bản phẩm ra thị trường.</p>
+            <a class="btn btn-primary btn-cta-strong" href="#contact">Trao đổi dự án</a>
+          </div>
+          <div class="enterprise-grid">
+            <article class="enterprise-card glass-surface">
+              <span><i class="bi bi-diagram-3"></i></span>
+              <h3>Quy trình, thủ tục rõ ràng</h3>
+              <p>Các bước cấp giấy phép được tổ chức rõ ràng, minh bạch.</p>
+            </article>
+            <article class="enterprise-card glass-surface">
+              <span><i class="bi bi-lightning-charge"></i></span>
+              <h3>Tiến độ nhanh chóng</h3>
+              <p>Thẩm định và cấp phép theo lộ trình đơn giản, dễ theo dõi.</p>
+            </article>
+            <article class="enterprise-card glass-surface">
+              <span><i class="bi bi-collection"></i></span>
+              <h3>Lĩnh vực đa dạng</h3>
+              <p>Tiếp nhận nhiều nhóm đề tài và loại hình xuất bản phẩm.</p>
+            </article>
+            <article class="enterprise-card enterprise-card-placeholder glass-surface" aria-label="Nội dung đa nền tảng đang được cập nhật">
+              <span><i class="bi bi-grid"></i></span>
+              <h3>Đa nền tảng</h3>
+              <p aria-hidden="true">&nbsp;</p>
             </article>
           </div>
         </div>
-        <div class="service-highlight glass-panel">
-          <div>
-            <span class="animated-icon"><i class="bi bi-stars"></i></span>
-            <strong>Dịch vụ được thiết kế để hạn chế rủi ro thủ tục xuất bản</strong>
-          </div>
-          <p>Đội ngũ tư vấn hỗ trợ xác định bước cần làm trước, phạm vi biên tập, phương án in ấn và kênh phát hành phù hợp với từng bản thảo.</p>
-          <a class="btn btn-primary btn-cta-strong" href="#contact">Nhận tư vấn ngay</a>
-        </div>
       </div>
     </section>
 
-    <section class="section-pad">
+    <section class="section-pad manuscript-section section-tint" id="manuscript">
       <div class="container-xl">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="image-stack">
-              <img class="stack-photo stack-main" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85" alt="Kệ sách trong thư viện">
-              <div class="stack-note glass-surface">
-                <strong>Chính danh - Minh bạch - Chỉn chu</strong>
-                <span>Ba tiêu chí trọng tâm trong mỗi dự án liên kết xuất bản.</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="why-copy">
-              <p class="section-kicker">Xuất bản cuốn sách của riêng bạn</p>
-              <h2>Một lộ trình rõ ràng để bản thảo trở thành sản phẩm có thể phát hành</h2>
-              <p>NXB Lao Động tư vấn thủ tục xuất bản, hạn chế các rủi ro liên quan đến hồ sơ, đồng thời đồng hành hoàn thiện bản thảo từ biên tập, dàn trang, thiết kế bìa, minh họa đến in ấn và phát hành.</p>
-              <div class="proof-list">
-                <div><i class="bi bi-shield-check"></i><span>Tư vấn thủ tục xuất bản rõ ràng, minh bạch.</span></div>
-                <div><i class="bi bi-brush"></i><span>Biên tập, dàn trang, thiết kế bìa, vẽ minh họa theo nhu cầu bản thảo.</span></div>
-                <div><i class="bi bi-box-seam"></i><span>In ấn chuyên nghiệp và kết nối phát hành cho sách sau xuất bản.</span></div>
-              </div>
-            </div>
-          </div>
+        <div class="section-heading manuscript-heading text-center">
+          <p class="section-kicker">Bắt đầu từ bản thảo</p>
+          <h2>Bạn đang ấp ủ một cuốn sách?</h2>
+          <p>Gửi thông tin để được tư vấn thủ tục xuất bản, hạn chế rủi ro và lựa chọn hình thức sản xuất phù hợp: sách giấy, ebook, audio book hoặc multimedia.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-tint" id="process">
-      <div class="container-xl">
-        <div class="section-heading text-center">
-          <p class="section-kicker">Quy trình triển khai</p>
-          <h2>6 bước hiện thực hóa cuốn sách của bạn</h2>
-        </div>
-        <div class="process-grid">
-          <article class="process-step glass-surface">
-            <span>01</span>
-            <h3>Tiếp nhận nhu cầu</h3>
-            <p>Ghi nhận đề tài, lĩnh vực cấp phép, hiện trạng bản thảo và nhu cầu sách giấy hoặc sách điện tử.</p>
+        <div class="manuscript-grid">
+          <article class="manuscript-step glass-surface">
+            <div class="manuscript-lottie" aria-hidden="true">
+              <dotlottie-player src="assets/lottie/agreement.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <h3>Tư vấn thủ tục xuất bản</h3>
+            <p>Định hướng hồ sơ, quy trình cấp phép rõ ràng và phù hợp với nội dung.</p>
           </article>
-          <article class="process-step glass-surface">
-            <span>02</span>
-            <h3>Thẩm định và tư vấn thủ tục</h3>
-            <p>Đánh giá nội dung, tính phù hợp xuất bản và những rủi ro cần xử lý trước khi triển khai.</p>
+          <article class="manuscript-step glass-surface">
+            <div class="manuscript-lottie" aria-hidden="true">
+              <dotlottie-player src="assets/lottie/support.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <h3>Đồng hành hoàn thiện bản thảo</h3>
+            <p>Biên tập, dàn trang, thiết kế bìa, vẽ minh họa.</p>
           </article>
-          <article class="process-step glass-surface">
-            <span>03</span>
-            <h3>Thống nhất phương án</h3>
-            <p>Chốt phạm vi cấp phép, biên tập, thiết kế, in ấn, sản xuất số và kế hoạch phát hành.</p>
+          <article class="manuscript-step glass-surface">
+            <div class="manuscript-lottie" aria-hidden="true">
+              <dotlottie-player src="assets/lottie/support.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <h3>In ấn chuyên nghiệp</h3>
+            <p>Phương án in phù hợp với mọi nhu cầu.</p>
           </article>
-          <article class="process-step glass-surface">
-            <span>04</span>
-            <h3>Hoàn thiện bản thảo</h3>
-            <p>Biên tập, dàn trang, thiết kế bìa, vẽ minh họa và chuẩn hóa file sản xuất.</p>
+          <article class="manuscript-step glass-surface">
+            <div class="manuscript-lottie" aria-hidden="true">
+              <dotlottie-player src="assets/lottie/laptop.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <h3>Số hóa, phát hành điện tử</h3>
+            <p>Chuyển đổi ebook, audio book và nội dung số đa nền tảng.</p>
           </article>
-          <article class="process-step glass-surface">
-            <span>05</span>
-            <h3>In ấn hoặc sản xuất số</h3>
-            <p>Triển khai in ấn chuyên nghiệp hoặc chuyển đổi ebook, audio book, multimedia.</p>
-          </article>
-          <article class="process-step glass-surface">
-            <span>06</span>
+          <article class="manuscript-step glass-surface">
+            <div class="manuscript-lottie" aria-hidden="true">
+              <dotlottie-player src="assets/lottie/journalist.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
             <h3>Kết nối phát hành</h3>
-            <p>Định hướng kênh phát hành sách giấy, sách điện tử và hoạt động giới thiệu tác phẩm.</p>
+            <p>Định hướng kênh phân phối phù hợp để tác phẩm tiếp cận độc giả.</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="partners">
-      <div class="container-xl">
-        <div class="section-heading text-center">
-          <p class="section-kicker">Dành cho ai?</p>
-          <h2>Phù hợp với nhiều nhóm tác giả và đơn vị nội dung</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <article class="partner-card glass-solid h-100">
-              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=85" alt="Tác giả cá nhân viết bản thảo">
-              <div>
-                <h3>Tác giả cá nhân</h3>
-                <p>Hồi ký, sách chuyên môn, sách kỹ năng, sách truyền cảm hứng hoặc tập hợp bài viết cá nhân.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="partner-card glass-solid h-100">
-              <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=85" alt="Doanh nghiệp họp phát triển nội dung">
-              <div>
-                <h3>Doanh nghiệp, tổ chức</h3>
-                <p>Sách thương hiệu, lịch sử doanh nghiệp, kỷ yếu, tài liệu đào tạo, ấn phẩm truyền thông nội bộ.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="partner-card glass-solid h-100">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Đơn vị giáo dục phát triển tài liệu">
-              <div>
-                <h3>Trường học, viện, hiệp hội</h3>
-                <p>Giáo trình, tài liệu tham khảo, sách chuyên ngành, báo cáo dự án và xuất bản phẩm chuyên đề.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-faq">
-      <div class="container-xl">
-        <div class="row g-4 align-items-start">
-          <div class="col-lg-5">
-            <div class="faq-intro">
-              <p class="section-kicker">Câu hỏi nhanh</p>
-              <h2>Chuẩn bị trước khi gửi bản thảo</h2>
-              <p>Bạn không cần có một bản thảo hoàn hảo ngay từ đầu. Việc quan trọng là xác định rõ mục tiêu, độc giả và mức độ hỗ trợ cần thiết.</p>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="accordion glass-solid" id="faqAccordion">
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Tôi mới có ý tưởng, chưa có bản thảo, có thể đăng ký không?</button>
-                </h3>
-                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Có. Bạn có thể gửi mô tả đề tài, mục tiêu độc giả và thông điệp chính để được tư vấn đề cương, phạm vi nội dung và lộ trình triển khai.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Có thể chọn từng hạng mục thay vì trọn gói không?</button>
-                </h3>
-                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Có. Tùy hiện trạng bản thảo, bạn có thể chọn biên tập, thiết kế bìa, dàn trang, thủ tục xuất bản, in ấn hoặc tư vấn phát hành.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Chi phí xuất bản được tính như thế nào?</button>
-                </h3>
-                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Chi phí phụ thuộc vào độ dài bản thảo, mức độ biên tập, thiết kế, số lượng in, chất liệu in và phạm vi hỗ trợ phát hành. Form đăng ký giúp đội ngũ tư vấn có dữ liệu ban đầu để phản hồi cụ thể hơn.</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="manuscript-actions text-center">
+          <a class="btn btn-primary btn-lg btn-cta-strong" href="#contact"><i class="bi bi-envelope-paper"></i> Đăng ký tư vấn miễn phí</a>
         </div>
       </div>
     </section>
@@ -364,27 +203,23 @@
               <p>Đội ngũ tư vấn sẽ liên hệ để làm rõ đề tài, hiện trạng bản thảo và phương án triển khai phù hợp.</p>
               <div class="contact-list">
                 <a href="mailto:info@nxblaodong.com.vn"><i class="bi bi-envelope"></i> info@nxblaodong.com.vn</a>
-                <a href="tel:02438515380"><i class="bi bi-telephone"></i> 024 3851 5380</a>
                 <span><i class="bi bi-geo-alt"></i> Tầng 12, 175 Giảng Võ, Ô Chợ Dừa, Hà Nội</span>
               </div>
             </div>
             <div class="col-lg-7">
-              <form class="consult-form glass-solid" id="consultForm" novalidate>
+              <form class="consult-form glass-solid" id="consultForm" action="https://formsubmit.co/e0203dc02b33dfb0fce3ca5cca36ef8b" method="POST" novalidate>
+                <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label" for="name">Họ và tên</label>
+                    <label class="form-label" for="name">Họ và tên <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden"> bắt buộc</span></label>
                     <input class="form-control" id="name" name="name" type="text" autocomplete="name" required>
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label" for="phone">Số điện thoại</label>
-                    <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" required>
+                    <label class="form-label" for="email">Email <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden"> bắt buộc</span></label>
+                    <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
                   </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" id="email" name="email" type="email" autocomplete="email">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="partnerType">Bạn là</label>
+                  <div class="col-12">
+                    <label class="form-label" for="partnerType">Bạn là <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden"> bắt buộc</span></label>
                     <select class="form-select" id="partnerType" name="partnerType" required>
                       <option value="">Chọn nhóm phù hợp</option>
                       <option>Tác giả cá nhân</option>
@@ -394,8 +229,27 @@
                     </select>
                   </div>
                   <div class="col-12">
-                    <label class="form-label" for="message">Nội dung cần tư vấn</label>
+                    <label class="form-label" for="message">Nội dung cần tư vấn <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden"> bắt buộc</span></label>
                     <textarea class="form-control" id="message" name="message" rows="4" placeholder="Ví dụ: Tôi có bản thảo khoảng 180 trang về kỹ năng quản lý đội nhóm..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="privacyConsent" required>
+                      <label class="form-check-label" for="privacyConsent" style="font-size:0.9rem; color: #4b5563;">
+                        Tôi đồng ý để Nhà xuất bản Lao Động xử lý thông tin cá nhân phục vụ mục đích tư vấn xuất bản. <span class="required-mark" aria-hidden="true">*</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="captcha-wrapper glass-surface p-3 rounded-3 mb-2" style="border: 1px solid rgba(0, 106, 177, 0.1);">
+                      <label class="form-label d-block fw-semibold mb-2" for="captchaInput">
+                        Câu hỏi bảo mật: <span id="captchaQuestion" class="badge bg-primary text-white fs-6 py-2 px-3">5 + 2 = ?</span> <span class="required-mark" aria-hidden="true">*</span>
+                      </label>
+                      <div class="input-group">
+                        <span class="input-group-text bg-transparent border-end-0" style="color: #6b7280;"><i class="bi bi-shield-lock"></i></span>
+                        <input class="form-control border-start-0" id="captchaInput" type="number" placeholder="Nhập kết quả phép tính để chống spam" required>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-12">
                     <button class="btn btn-primary btn-lg w-100" type="submit"><i class="bi bi-send"></i> Gửi thông tin tư vấn</button>
@@ -410,8 +264,8 @@
     </section>
   </main>
 
-  <a class="floating-contact-cta glass-panel" href="https://www.facebook.com/messages/t/1090392457484371" target="_blank" rel="noopener" aria-label="Tư vấn xuất bản qua Messenger">
-    <span class="floating-pen-icon"><i class="bi bi-pen"></i></span>
+  <a class="floating-contact-cta glass-panel" href="https://m.me/1090392457484371" data-messenger-chat data-desktop-url="https://www.facebook.com/messages/t/1090392457484371" target="_blank" rel="noopener" aria-label="Mở Messenger để tư vấn xuất bản">
+    <span class="floating-chat-icon"><i class="bi bi-messenger"></i></span>
     <strong>Tư vấn xuất bản</strong>
   </a>
 
@@ -422,29 +276,26 @@
           <img src="https://images.nxblaodong.com.vn/avatar/image-20221214111957476.svg" alt="Logo Nhà xuất bản Lao Động">
           <p>Nhà xuất bản Lao Động - Thành lập ngày 1/11/1945, trực thuộc Tổng Liên đoàn Lao động Việt Nam. Hơn 80 năm đồng hành cùng hàng nghìn tác giả và đối tác trên toàn quốc.</p>
           <div class="footer-social" aria-label="Kênh mạng xã hội">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61588566604034" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="mailto:info@nxblaodong.com.vn" aria-label="Email"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="footer-col">
           <strong>Dịch vụ</strong>
-          <a href="#services">Cấp giấy phép xuất bản</a>
-          <a href="#services">Xuất bản sách</a>
+          <a href="#enterprise">Liên kết xuất bản</a>
+          <a href="#manuscript">Tự xuất bản sách</a>
           <a href="#services">Ấn phẩm điện tử</a>
         </div>
         <div class="footer-col">
           <strong>Thông tin</strong>
-          <a href="#overview">Giới thiệu</a>
-          <a href="#process">Quy trình</a>
-          <a href="#partners">Đối tượng</a>
-          <a href="#faqAccordion">Tin tức</a>
+          <a href="#services">Dịch vụ</a>
+          <a href="#enterprise">Dành cho doanh nghiệp</a>
+          <a href="#manuscript">Bắt đầu từ bản thảo</a>
+          <a href="#contact">Đăng ký tư vấn</a>
         </div>
         <div class="footer-col footer-contact">
           <strong>Liên hệ</strong>
           <a href="https://maps.google.com/?q=T%E1%BA%A7ng%2012%2C%20175%20Gi%E1%BA%A3ng%20V%C3%B5%2C%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20H%C3%A0%20N%E1%BB%99i" target="_blank" rel="noopener"><i class="bi bi-geo-alt"></i> Tầng 12, 175 Giảng Võ, Ô Chợ Dừa, Hà Nội</a>
-          <a href="tel:02438515380"><i class="bi bi-telephone"></i> 024 3851 5380</a>
           <a href="mailto:info@nxblaodong.com.vn"><i class="bi bi-envelope"></i> info@nxblaodong.com.vn</a>
           <a href="https://www.nxblaodong.com.vn" target="_blank" rel="noopener"><i class="bi bi-globe"></i> www.nxblaodong.com.vn</a>
         </div>
